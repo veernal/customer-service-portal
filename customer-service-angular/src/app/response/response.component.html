@@ -1,0 +1,59 @@
+
+<table id="request">
+    
+    <thead style="background-color:#40f4a9">
+
+        <td>Request ID</td>
+
+        <td>Customer Id</td>
+
+        <td>Customer Name</td>
+
+        <td>Request Name</td>
+
+        <td>Request Description</td>
+        
+        <td>Service Type</td>
+
+        <td>Req Status</td>
+
+        <td>Created Date</td>
+
+        <td>Request Status</td>
+
+        <td>Delete request</td>
+
+    </thead>
+
+    
+    <tr *ngFor ="let request of requests">
+      
+
+        <td>{{request.reqId}}</td>
+
+        <td>{{request.customerId}}</td>
+
+        <td>{{request.customerName}}</td>
+
+        <td>{{request.reqName}}</td>
+
+        <td>{{request.reqdescription}}</td>
+
+        <td>{{request.serviceType}}</td>
+
+        <td>{{request.reqStatus}}</td>
+
+        <td>{{request.date}}</td>
+
+        <td>
+            <input type="button"  [disabled]="reopenButton(request)" value="REOPEN"
+            (click) = "reopen(request)"/>
+        </td>
+
+        <td> 
+            <input type="button"  [disabled]="reopenButton(request)" value="DELETE"
+        (click) = "delete(request)"/></td>
+
+      </tr>  <br>
+
+</table>

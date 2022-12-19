@@ -1,0 +1,32 @@
+
+<body>
+    <h1 align="center">Update Request</h1>
+<div class="firstdiv">
+    <label for="name"><b>EnterCustomerID</b></label><br>
+    <input type="number" name="customerId" [(ngModel)]="customerId"><br><br> 
+    <label for="name"><b>Enter Request ID</b></label> <br>
+    <input type="number" name="reqId" [(ngModel)]="reqId"><br><br>
+    <button type="button" class="btn btn-info" (click)="findrequest()">Get details</button>
+ </div><br>
+ <hr>
+  <div class="seconddiv">
+  <label class="form-label" for="form12">Request Title </label><br>
+    <input type="text" id="form12" class="form-control"  [(ngModel)]="request.reqName"/><br><br>
+    <label class="form-label" for="form12">Request Description</label><br>
+    <input type="text" id="form12" class="form-control"  [(ngModel)]="request.reqdescription"/><br><br>
+
+    <label class="form-label" for="Req type">Service Type</label><br>
+    <select [(ngModel)] ='request.serviceType' type="text" id="Req type" class="form-control"  style="width: 26.5%;"><br>
+        
+        <option value="database">Database</option>
+        <option value="access">User Access Management</option>
+        <option value="applictaion related">Application</option>
+      </select><br><br>
+     
+    <label class="form-label" for="status">Request Status</label><br>
+    <input type="text" id="status" class="form-control"  [(ngModel)]="request.reqStatus"/><br><br>
+    <button type="button" class="btn btn-info" (click)="update()">Save</button>
+
+   
+  </div>
+    </body>
