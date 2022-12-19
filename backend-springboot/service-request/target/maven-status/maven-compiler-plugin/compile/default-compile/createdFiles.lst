@@ -1,0 +1,8 @@
+com\customerservice\servicerequest\service\ServiceReqService.class
+com\customerservice\servicerequest\entity\Customer.class
+com\customerservice\servicerequest\ServiceRequestApplication.class
+com\customerservice\servicerequest\client\CustomerClient.class
+com\customerservice\servicerequest\controller\ServiceReqController.class
+com\customerservice\servicerequest\entity\ServiceRequest.class
+com\customerservice\servicerequest\exception\ServiceReqException.class
+com\customerservice\servicerequest\repository\ServiceReqRepository.class
