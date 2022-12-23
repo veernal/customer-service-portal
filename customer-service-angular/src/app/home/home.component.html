@@ -1,44 +1,47 @@
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<p>
+    <mat-toolbar>
+      <span>Customer Service Portal</span>
+    </mat-toolbar>
+  </p>
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Service Requests</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button class="button-logout"(click) = "logout()">LOGOUT
+      </button>
+  </mat-toolbar>
 <body>
-    <br><br>
-<h1 align="center">Customer Service Requests</h1>
 <br>
 
 <div class="container align-items-center justify-content-center">
     
     
     <div class="row">
-        <button class="btn  col-2" routerLink='/createRequest'>Create Request</button>
+        <button mat-raised-button color="primary" routerLink='/createRequest'>Create Request</button>
     </div><br>
 
     <div class="row">
-        <button class="btn  col-2" routerLink='/getCustomers'>Customers List</button>
+        <button mat-raised-button color="primary" routerLink='/getCustomers'>Customers List</button>
     </div><br>
 
     <div class="row">
-        <button class="btn  col-2" routerLink='/requestByStatus'>Status of the request</button>
+        <button mat-raised-button color="primary" routerLink='/requestByStatus'>Status of the request</button>
     </div><br>
 
     <div class="row">
-        <button class="btn  col-2" routerLink='/requestsList'>Requests List</button>
+        <button mat-raised-button color="primary" routerLink='/requestsList'>Requests List</button>
     </div><br>
 
     <div class="row">
-        <button class="btn  col-2" routerLink='/updateRequest'>Update Requests</button>
+        <button mat-raised-button color="primary" routerLink='/updateRequest'>Update Requests</button>
     </div><br>
 
     <div class="row">
-        <button class="btn  col-2" routerLink='/updateCustomers'>Update Customer</button>
+        <button mat-raised-button color="primary" routerLink='/updateCustomers'>Update Customer</button>
     </div><br>
 
     
 </div> 
 </body>
-</html>
