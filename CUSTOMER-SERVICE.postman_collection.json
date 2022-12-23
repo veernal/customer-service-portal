@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "41cf5ed9-073d-4907-96a5-b918a2c64297",
+		"name": "CUSTOMER-SERVICE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24325483"
+	},
+	"item": [
+		{
+			"name": "CUSTOMER",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailId\":\"verma@org.com\",\r\n    \"password\":\"verma@1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/customer/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"customer",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCustomers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/customer/getCustomers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"customer",
+								"getCustomers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerName\":\"verma\",\r\n    \"password\":\"verma@1\",\r\n    \"address\":\"bangalore\",\r\n    \"state\":\"karnataka\",\r\n    \"country\":\"india\",\r\n    \"emailId\":\"verma@org.com\",\r\n    \"pan\":\"23dw12b\",\r\n    \"contactNo\":9678543216,\r\n    \"dob\":\"12/03/2012\",\r\n    \"contactPreference\":\"contactNo\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/customer/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"customer",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerName\":\"verma\",\r\n    \"password\":\"verma@1\",\r\n    \"address\":\"bangalore\",\r\n    \"state\":\"karnataka\",\r\n    \"country\":\"india\",\r\n    \"emailId\":\"verma@org.com\",\r\n    \"pan\":\"456th5\",\r\n    \"contactNo\":9678543216,\r\n    \"dob\":\"12/03/2012\",\r\n    \"contactPreference\":\"contactNo\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/customer/updateCustomerDetails/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"customer",
+								"updateCustomerDetails",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SERVICE-REQUEST",
+			"item": [
+				{
+					"name": "Create service request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"reqName\":\"myInfo\",\r\n    \"reqdescription\":\"my details\",\r\n    \"serviceType\":\"Information\",\r\n    \"assignedTo\":\"\",\r\n    \"reqStatus\":\"open\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/serviceRequest/1/createRequest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"serviceRequest",
+								"1",
+								"createRequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findRequestByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/serviceRequest/findRequestByID/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"serviceRequest",
+								"findRequestByID",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListOfRequests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/serviceRequest/getListOfRequests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"serviceRequest",
+								"getListOfRequests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findRequestByStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/serviceRequest/findReqbyStatus/1/open",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"serviceRequest",
+								"findReqbyStatus",
+								"1",
+								"open"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateRequest",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"reqName\":\"database access\",\r\n    \"reqdescription\":\"access request\",\r\n    \"serviceType\":\"database\",\r\n    \"assignedTo\":\"\",\r\n    \"reqStatus\":\"close\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/serviceRequest/1/updateRequest/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"serviceRequest",
+								"1",
+								"updateRequest",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteRequest",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/serviceRequest/deletereq/1/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"serviceRequest",
+								"deletereq",
+								"1",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
