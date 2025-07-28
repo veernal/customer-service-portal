@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
         username: ['',
           [
             Validators.required,
-            Validators.minLength(6),
+            Validators.minLength(7),
             Validators.maxLength(20),
             // this.validateUsername.bind(this)
           ]
